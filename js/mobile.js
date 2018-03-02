@@ -9,5 +9,5 @@ return false;
 }
 
 if(isMobile() === true) {
-    window.location  = 'http://kandidat.maximonline.ru/mobile.html';
+    window.location  = '/mobile.html';
 }
