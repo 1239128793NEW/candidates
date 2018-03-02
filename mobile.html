@@ -1,337 +1,334 @@
-
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <meta name="viewport" content="width=320">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=320">
 
-        <title>Тест: Кто твой кандидат?</title>
-        <meta name="description" content="Ответь на вопросы сейчас и сделай свой выбор 18 марта!">
+	<title>Тест: Кто твой кандидат?</title>
+	<meta name="description" content="Ответь на вопросы сейчас и сделай свой выбор 18 марта!">
 
-        <link rel="stylesheet" type="text/css" href="./js/jquery.fullPage.css">
-        <link rel="stylesheet" type="text/css" href="./css/modal.css">
-        <link rel="stylesheet" type="text/css" href="./css/mobile.css?v=14">
+	<link rel="stylesheet" type="text/css" href="./js/jquery.fullPage.css">
+	<link rel="stylesheet" type="text/css" href="css/modal.css">
+	<link rel="stylesheet" type="text/css" href="css/mobile.css%3Fv=14.css">
 
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 
-        <script type="text/javascript" src="./js/modal.js"></script>
-
-
-        <meta property="og:title" content="Тест: Кто твой кандидат?">
-        <meta name="twitter:title" content="Тест: Кто твой кандидат?">
-
-        <meta NAME="description" CONTENT="Ответь на вопросы сейчас и сделай свой выбор 18 марта!">
-        <meta itemprop="description" content="Ответь на вопросы сейчас и сделай свой выбор 18 марта!">
-        <meta name="twitter:description" content="Ответь на вопросы сейчас и сделай свой выбор 18 марта!">
-        <meta property="og:description" content="Ответь на вопросы сейчас и сделай свой выбор 18 марта!">
-
-        <meta property="og:image" content="http://kandidat.lenta.ru/share.jpg">
-        <link rel="image_src" href="http://kandidat.lenta.ru/share.jpg">
-        <meta name="twitter:image" content="http://kandidat.lenta.ru/share.jpg">
-
-        <meta name="twitter:card" content="summary">
-
-        <meta property="business:contact_data:website" content="http://kandidat.lenta.ru/">
-        <meta property="og:url" content="http://kandidat.lenta.ru/">
-        <meta property="og:see_also" content="http://kandidat.lenta.ru/">
-
-        <!-- 	<script>
-              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-              ga('create', 'UA-110511225-6', 'kandidat.lenta.ru');
-              ga('send', 'pageview');
-            </script> -->
-    </head>
-    <body>
-
-        <div id="burger"><i></i></div>
-        <div id="menu">
-
-            <div id="menuClose"></div>
-            <br><br><br>
-            <a href="#mainPage" class="menuItem">Главная</a>
-            <a href="#candidates" class="menuItem">Кандидаты</a>
-            <a href="#test" class="menuItem">Тест</a>
-            <div id="shareText">Поделиться проектом<br>в&nbsp;социальных сетях:</div>
-            <div id="sHARE">
-                <div class="ya-share2" data-services="facebook,vkontakte,twitter" data-size="m"></div>
-            </div>
-
-        </div>
-
-        <div id="fixedBottom">
-            <div class="fixedBottom__wrp">
-            </div>
-        </div>
+	<script type="text/javascript" src="js/modal.js"></script>
 
 
+	<meta property="og:title" content="Тест: Кто твой кандидат?">
+	<meta name="twitter:title" content="Тест: Кто твой кандидат?">
 
-        <div id="fullpage">
+	<meta NAME="description" CONTENT="Ответь на вопросы сейчас и сделай свой выбор 18 марта!">
+	<meta itemprop="description" content="Ответь на вопросы сейчас и сделай свой выбор 18 марта!">
+	<meta name="twitter:description" content="Ответь на вопросы сейчас и сделай свой выбор 18 марта!">
+	<meta property="og:description" content="Ответь на вопросы сейчас и сделай свой выбор 18 марта!">
 
-            <div class="section " id="section0"><a name="mainPage"></a>
-                <div class="section__wrp">
-                    <a href="http://lenta.ru" class="logoMxm" target="_blank" rel="nofollow"></a>
-                    <h1 class="h1">КТО ТВОЙ КАНДИДАТ?</h1>
-                    <div class="section0__txt">
-                        Перед настоящими выборами Президента неплохо было бы немного размяться. Пройди наш тест и узнай, какой видеоблогер мог бы стать твоим идеальным кандидатом. Ответь на вопросы сейчас, а 18 марта сделай серьезный выбор!
-                    </div>
-                    <a href="#candidates" class="menu__item menu__item_candidates"></a>
-                    <a href="#test" class="menu__item menu__item_test"></a>
-                    <div class="votingBox"></div>
-                    <div id="anmtn1" class="zhgun"></div>
-                </div>
-            </div> <!-- /section0 -->
+	<meta property="og:image" content="http://kandidat.lenta.ru/share.jpg">
+	<link rel="image_src" href="share.jpg">
+	<meta name="twitter:image" content="http://kandidat.lenta.ru/share.jpg">
 
-            <div class="section" id="section2"><a name="candidates"></a>
-                <div class="section__wrp">
-                    <a href="http://lenta.ru" class="logoMxm2" target="_blank" rel="nofollow"></a>
-                    <h2 class="h2">КАНДИДАТЫ</h2>
-                    <div class="candidate__list">
-                        <img data-izimodal-open="#modal-1" class="candidate__item candidate__item_01" src="./img/candidate-1.png">
-                        <img data-izimodal-open="#modal-2" class="candidate__item candidate__item_02" src="./img/candidate-2.png">
-                        <img data-izimodal-open="#modal-3" class="candidate__item candidate__item_03" src="./img/candidate-3.png">
-                        <img data-izimodal-open="#modal-4" class="candidate__item candidate__item_04" src="./img/candidate-4.png">
-                        <img data-izimodal-open="#modal-5" class="candidate__item candidate__item_05" src="./img/candidate-5.png">
-                        <img data-izimodal-open="#modal-6" class="candidate__item candidate__item_06" src="./img/candidate-6.png">
-                        <img data-izimodal-open="#modal-7" class="candidate__item candidate__item_07" src="./img/candidate-7.png">
-                        <img data-izimodal-open="#modal-8" class="candidate__item candidate__item_08" src="./img/candidate-8.png">
-                        <img data-izimodal-open="#modal-9" class="candidate__item candidate__item_09" src="./img/candidate-9.png">
-                        <img data-izimodal-open="#modal-10" class="candidate__item candidate__item_10" src="./img/candidate-10.png">
-                    </div>
-                </div>
-            </div>
+	<meta name="twitter:card" content="summary">
 
-            <div class="section" id="section3"><a name="test"></a>
-                <div class="section__wrp">
-                    <a href="http://lenta.ru" class="logoMxm2" target="_blank" rel="nofollow"></a>
-                    <h2 class="h3 h3__test">ТЕСТ</h2>
-                    <h2 class="h3 h3__resul" style="display: none;">РЕЗУЛЬТАТ</h2>
-                    <div id="questions">
+	<meta property="business:contact_data:website" content="http://kandidat.lenta.ru/">
+	<meta property="og:url" content="http://kandidat.lenta.ru/">
+	<meta property="og:see_also" content="http://kandidat.lenta.ru/">
 
-                        <div class="questions__List">
+<!-- 	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	  ga('create', 'UA-110511225-6', 'kandidat.lenta.ru');
+	  ga('send', 'pageview');
+	</script> -->
+</head>
+<body>
 
-                            <div class="questions__blocList show" id="questions__blocList_0">
-                                <div class="question__title question__title_0">
-                                    <div class="question__titleWRP">С чего должно начинаться первое обращение Президента?</div>
-                                </div>
-                                <div class="questions__item">«Батя в здании, спасайте задницы».</div>
-                                <div class="questions__item">Я подниму рождаемость, искореню коррупцию, укреплю экономику страны... Но это не точно.</div>
-                                <div class="questions__item">Шутка смешнее, если ее делать несколько раз.</div>
-                                <div class="questions__item">Попробуйте, это я сама готовила.</div>
-                            </div>
+<div id="burger"><i></i></div>
+<div id="menu">
 
-                            <div class="questions__blocList" id="questions__blocList_1">
-                                <div class="question__title question__title_1">
-                                    <div class="question__titleWRP">Первое, что сделает новый Президент?</div>
-                                </div>
-                                <div class="questions__item">Заедет в Кремль и поменяет обои… Хотя бы на рабочем столе.</div>
-                                <div class="questions__item">Отправит всех русских рэперов на гастроли за границу. Отдохнем немного.</div>
-                                <div class="questions__item">Пройдет верификацию ВКонтакте.</div>
-                                <div class="questions__item">Позвонит Биг Рашн Боссу и скажет, что теперь он здесь Биг Рашн Босс.</div>
-                            </div>
+	<div id="menuClose"></div>
+	<br><br><br>
+    <a href="mobile.html#mainPage" class="menuItem">Главная</a>
+    <a href="mobile.html#candidates" class="menuItem">Кандидаты</a>
+    <a href="mobile.html#test" class="menuItem">Тест</a>
+    <div id="shareText">Поделиться проектом<br>в&nbsp;социальных сетях:</div>
+	<div id="sHARE">
+		<div class="ya-share2" data-services="facebook,vkontakte,twitter" data-size="m"></div>
+	</div>
 
-                            <div class="questions__blocList" id="questions__blocList_2">
-                                <div class="question__title question__title_2">
-                                    <div class="question__titleWRP">Каким должен быть Пресс-секретарь Президента?</div>
-                                </div>
-                                <div class="questions__item">Главное, чтобы пресс был с кубиками.</div>
-                                <div class="questions__item">Пусть будет Маликов. Я маме обещал.</div>
-                                <div class="questions__item">Жириновский. Поорем вместе.</div>
-                                <div class="questions__item">Живым… И желательно нефильтрованным.</div>
-                            </div>
+</div>
 
-                            <div class="questions__blocList" id="questions__blocList_3">
-                                <div class="question__title question__title_3">
-                                    <div class="question__titleWRP">Кто попадает под воинскую обязанность?</div>
-                                </div>
-                                <div class="questions__item">Бьюти-блогеры. Они знают, как сделать правильную маскировку.</div>
-                                <div class="questions__item">Это целая отдельная рекламная песня!</div>
-                                <div class="questions__item">Призовите русских рэперов. Получится самая страшная армия в мире.</div>
-                                <div class="questions__item">Вейперы. Сэкономим на дымовых гранатах.</div>
-                            </div>
-
-                            <div class="questions__blocList" id="questions__blocList_4">
-                                <div class="question__title question__title_4">
-                                    <div class="question__titleWRP">Как ответить на санкции США?</div>
-                                </div>
-                                <div class="questions__item">Привет, Алиса. Что такое санкции?</div>
-                                <div class="questions__item">Мы отправим к ним Ракету.</div>
-                                <div class="questions__item">Нам не страшно. Мы замутим совместку с белорусами.</div>
-                                <div class="questions__item">Продолжать есть санкционные продукты и не обращать внимания.</div>
-                            </div>
-
-                            <div class="questions__blocList" id="questions__blocList_5">
-                                <div class="question__title question__title_5">
-                                    <div class="question__titleWRP">Куда отправится Президент с рабочим визитом в первую очередь?</div>
-                                </div>
-                                <div class="questions__item">Куда угодно. Меня все равно нигде не знают.</div>
-                                <div class="questions__item">В Америку. Надо английский подтянуть.</div>
-                                <div class="questions__item">В Таилайнд. Надо загореть, чтобы мама осталась довольна.</div>
-                                <div class="questions__item">В Грецию. Хоть кто-то должен там поработать.</div>
-                            </div>
-
-                            <div class="questions__blocList" id="questions__blocList_6">
-                                <div class="question__title question__title_6">
-                                    <div class="question__titleWRP">Как победить коррупцию чиновников?</div>
-                                </div>
-                                <div class="questions__item">Свозить их в Сингапур в один конец для обмена опытом.</div>
-                                <div class="questions__item">Вжух, как это не клево!</div>
-                                <div class="questions__item">Всем ворующим ссылка… желательно, битая.</div>
-                                <div class="questions__item">Предлагаю продолжить пранк с колбаской.</div>
-                            </div>
-
-                            <div class="questions__blocList" id="questions__blocList_7">
-                                <div class="question__title question__title_7">
-                                    <div class="question__titleWRP">Как повысить рождаемость в&nbsp;стране?</div>
-                                </div>
-                                <div class="questions__item">Дорогие россияне... Хотите узнать о самом вкусном и недорогом пиве?
-                                    Переходите по ссылочке в описании.</div>
-                                <div class="questions__item">Проводить выпускной в школе несколько раз в год.</div>
-                                <div class="questions__item">Раз в день выключать вай-фай по всей стране.</div>
-                                <div class="questions__item">Включите телик, там сплошная порнография.</div>
-                            </div>
-
-                            <div class="questions__blocList" id="questions__blocList_8">
-                                <div class="question__title question__title_8">
-                                    <div class="question__titleWRP">На чем должна лежать рука Президента, когда он будет произносить клятву?</div>
-                                </div>
-                                <div class="questions__item">На золотой кнопке от Youtube. Это самое дорогое, что у меня есть.</div>
-                                <div class="questions__item">На джойстике, пицце и холодном пиве.</div>
-                                <div class="questions__item">Я положу руку на плакат Нойза МС. Никто не должен это видеть.</div>
-                                <div class="questions__item">На Макбуке. Он всегда у меня под рукой, чтобы не украли.</div>
-                            </div>
-
-                            <div class="questions__blocList" id="questions__blocList_9">
-                                <div class="question__title question__title_9">
-                                    <div class="question__titleWRP question__titleWRP_nn">Как бороться с безработицей?</div>
-                                </div>
-                                <div class="questions__item">Запретить все онлайн-казино.</div>
-                                <div class="questions__item">Я не знаю, какой вынести вердикт!</div>
-                                <div class="questions__item">А о том, как победить безработицу, вы узнаете в следующем выпуске.</div>
-                                <div class="questions__item">Зачем? Я не работаю, и живу как король.</div>
-                            </div>
-
-                            <div class="questions__blocList" id="questions__blocList_10">
-                                <div class="question__title question__title_10">
-                                    <div class="question__titleWRP question__titleWRP_nn">Какую страну вы видите стратегическим партнером?</div>
-                                </div>
-                                <div class="questions__item">Любую, где можно отлично отдохнуть со своими бро.</div>
-                                <div class="questions__item">Китай. Они жидкость для вейпа делают.</div>
-                                <div class="questions__item">Армения. Судя по населению, мы с ними уже объединились.</div>
-                                <div class="questions__item">Я никого не вижу. Просто в детстве на сварку смотрел теперь в очках хожу.</div>
-                            </div>
-
-                            <div class="questions__blocList" id="questions__blocList_11">
-                                <div class="question__title question__title_11">
-                                    <div class="question__titleWRP question__titleWRP_nn">Как должен выглядеть Президент?</div>
-                                </div>
-                                <div class="questions__item">«Спроси у своей мамы».</div>
-                                <div class="questions__item">Главное, чтобы фэйс был нормальный.</div>
-                                <div class="questions__item">Он должен быть спортивным. Например, пловец. А что, дзюдо мы уже
-                                    подтянули.</div>
-                                <div class="questions__item">Он должен быть неповторим, как (пародирует Соболева) Нииииккккколаай
-                                    Соболев!</div>
-                            </div>
-
-                            <div class="questions__blocList" id="questions__blocList_12">
-                                <div class="question__title question__title_12">
-                                    <div class="question__titleWRP question__titleWRP_nn">Что всегда должно быть с собой у Президента?</div>
-                                </div>
-                                <div class="questions__item">Шуба. Мало ли через час срочно нужно быть на Северном полюсе.</div>
-                                <div class="questions__item">Борода, чтобы все говорили «Да».</div>
-                                <div class="questions__item">Премьер-министр. Мало ли, он захочет послушать песню «У нее глаза – два бриллианта, три карата…».</div>
-                                <div class="questions__item">Первая леди и вторая - если визит неофициальный.</div>
-                            </div>
-
-                            <div class="questions__blocList" id="questions__blocList_13">
-                                <div class="question__title question__title_13">
-                                    <div class="question__titleWRP question__titleWRP_nn">Какие льготы следует установить для населения?</div>
-                                </div>
-                                <div class="questions__item">Нельзя продавать алкоголь после 23:00. Его нужно раздавать бесплатно.</div>
-                                <div class="questions__item">Целый час бесплатного прослушивания русской музыки в соцсетях. Больше – вредно.</div>
-                                <div class="questions__item">Дополнительные уроки русского языка для тех, кто любит писать комментарии.</div>
-                                <div class="questions__item">Бесплатное посещение ортодонта.</div>
-                            </div>
-
-                        </div>
-
-                        <div id="end">
-                            <div id="page0" class="testResultItem show">
-                                <img data-izimodal-open="#modal-1" class="candidate__item candidate__item_01" src="./img/candidate-1.png">
-                                <div class="rezLink" data-izimodal-open="#modal-1"></div>
-                            </div>
-                            <div id="page1" class="testResultItem">
-                                <img data-izimodal-open="#modal-2" class="candidate__item candidate__item_02" src="./img/candidate-2.png">
-                                <div class="rezLink" data-izimodal-open="#modal-2"></div>
-                            </div>
-                            <div id="page2" class="testResultItem">
-                                <img data-izimodal-open="#modal-3" class="candidate__item candidate__item_03" src="./img/candidate-3.png">
-                                <div class="rezLink" data-izimodal-open="#modal-3"></div>
-                            </div>
-                            <div id="page3" class="testResultItem">
-                                <img data-izimodal-open="#modal-4" class="candidate__item candidate__item_04" src="./img/candidate-4.png">
-                                <div class="rezLink" data-izimodal-open="#modal-4"></div>
-                            </div>
-                            <div id="page4" class="testResultItem">
-                                <img data-izimodal-open="#modal-5" class="candidate__item candidate__item_05" src="./img/candidate-5.png">
-                                <div class="rezLink" data-izimodal-open="#modal-5"></div>
-                            </div>
-                            <div id="page5" class="testResultItem">
-                                <img data-izimodal-open="#modal-6" class="candidate__item candidate__item_06" src="./img/candidate-6.png">
-                                <div class="rezLink" data-izimodal-open="#modal-6"></div>
-                            </div>
-                            <div id="page6" class="testResultItem">
-                                <img data-izimodal-open="#modal-7" class="candidate__item candidate__item_07" src="./img/candidate-7.png">
-                                <div class="rezLink" data-izimodal-open="#modal-7"></div>
-                            </div>
-                            <div id="page7" class="testResultItem">
-                                <img data-izimodal-open="#modal-8" class="candidate__item candidate__item_08" src="./img/candidate-8.png">
-                                <div class="rezLink" data-izimodal-open="#modal-8"></div>
-                            </div>
-                            <div id="page8" class="testResultItem">
-                                <img data-izimodal-open="#modal-9" class="candidate__item candidate__item_09" src="./img/candidate-9.png">
-                                <div class="rezLink" data-izimodal-open="#modal-9"></div>
-                            </div>
-                            <div id="page9" class="testResultItem">
-                                <img data-izimodal-open="#modal-10" class="candidate__item candidate__item_10" src="./img/candidate-10.png">
-                                <div class="rezLink" data-izimodal-open="#modal-10"></div>
-                            </div>
-                            <div class="end__text">
-                                Слава блогу, он не баллотируется в президенты. Зато у тебя есть возможность выбрать реального кандидата — приходи 18 марта на избирательный участок и «поставь свой лайк» тому, кого считаешь достойным!<br><br><a id="startText">Пройти тест еще раз</a>
-                            </div>
-                        </div>
-
-                    </div>
-                    <a href="https://lenta.ru/" class="logoMxm" target="_blank" rel="nofollow"
-                       style="bottom: 3vh; top: auto"></a>
-                </div>
-            </div>
-
-        </div> <!-- /fullpage -->
+<div id="fixedBottom">
+	<div class="fixedBottom__wrp">
+	</div>
+</div>
 
 
 
-        <div id="modal-1" class="modais" data-izimodal-transitionin="fadeInDown" data-izimodal-title="БИГРАШН БОСС" data-izimodal-iframeURL="https://www.youtube.com/embed/TU1ek8tk2ys?autoplay=1"></div>
-        <div id="modal-2" class="modais" data-izimodal-transitionin="fadeInDown" data-izimodal-title="ЮРИЙ ХОВАНСКИЙ" data-izimodal-iframeURL="https://www.youtube.com/embed/WlVSq2nVpDg?autoplay=1"></div>
+<div id="fullpage">
+
+	<div class="section " id="section0"><a name="mainPage"></a>
+		<div class="section__wrp">
+			<a href="http://lenta.ru" class="logoMxm" target="_blank" rel="nofollow"></a>
+			<h1 class="h1">КТО ТВОЙ КАНДИДАТ?</h1>
+			<div class="section0__txt">
+				Перед настоящими выборами Президента неплохо было бы немного размяться. Пройди наш тест и узнай, какой видеоблогер мог бы стать твоим идеальным кандидатом. Ответь на вопросы сейчас, а 18 марта сделай серьезный выбор!
+			</div>
+			<a href="mobile.html#candidates" class="menu__item menu__item_candidates"></a>
+    		<a href="mobile.html#test" class="menu__item menu__item_test"></a>
+			<div class="votingBox"></div>
+			<div id="anmtn1" class="zhgun"></div>
+		</div>
+	</div> <!-- /section0 -->
+
+	<div class="section" id="section2"><a name="candidates"></a>
+		<div class="section__wrp">
+			<a href="http://lenta.ru" class="logoMxm2" target="_blank" rel="nofollow"></a>
+			<h2 class="h2">КАНДИДАТЫ</h2>
+			<div class="candidate__list">
+				<img data-izimodal-open="#modal-1" class="candidate__item candidate__item_01" src="img/candidate-1.png">
+				<img data-izimodal-open="#modal-2" class="candidate__item candidate__item_02" src="img/candidate-2.png">
+				<img data-izimodal-open="#modal-3" class="candidate__item candidate__item_03" src="img/candidate-3.png">
+				<img data-izimodal-open="#modal-4" class="candidate__item candidate__item_04" src="img/candidate-4.png">
+				<img data-izimodal-open="#modal-5" class="candidate__item candidate__item_05" src="img/candidate-5.png">
+				<img data-izimodal-open="#modal-6" class="candidate__item candidate__item_06" src="img/candidate-6.png">
+				<img data-izimodal-open="#modal-7" class="candidate__item candidate__item_07" src="img/candidate-7.png">
+				<img data-izimodal-open="#modal-8" class="candidate__item candidate__item_08" src="img/candidate-8.png">
+				<img data-izimodal-open="#modal-9" class="candidate__item candidate__item_09" src="img/candidate-9.png">
+				<img data-izimodal-open="#modal-10" class="candidate__item candidate__item_10" src="img/candidate-10.png">
+			</div>
+		</div>
+	</div>
+
+	<div class="section" id="section3"><a name="test"></a>
+		<div class="section__wrp">			
+			<a href="http://lenta.ru" class="logoMxm2" target="_blank" rel="nofollow"></a>
+			<h2 class="h3 h3__test">ТЕСТ</h2>
+			<h2 class="h3 h3__resul" style="display: none;">РЕЗУЛЬТАТ</h2>
+			<div id="questions">
+
+				<div class="questions__List">
+
+					<div class="questions__blocList show" id="questions__blocList_0">
+						<div class="question__title question__title_0">
+							<div class="question__titleWRP">С чего должно начинаться первое обращение Президента?</div>
+						</div>
+						<div class="questions__item">«Батя в здании, спасайте задницы».</div>
+						<div class="questions__item">Я подниму рождаемость, искореню коррупцию, укреплю экономику страны... Но это не точно.</div>
+						<div class="questions__item">Шутка смешнее, если ее делать несколько раз.</div>
+						<div class="questions__item">Попробуйте, это я сама готовила.</div>
+					</div>
+
+					<div class="questions__blocList" id="questions__blocList_1">
+						<div class="question__title question__title_1">
+							<div class="question__titleWRP">Первое, что сделает новый Президент?</div>
+						</div>
+						<div class="questions__item">Заедет в Кремль и поменяет обои… Хотя бы на рабочем столе.</div>
+						<div class="questions__item">Отправит всех русских рэперов на гастроли за границу. Отдохнем немного.</div>
+						<div class="questions__item">Пройдет верификацию ВКонтакте.</div>
+						<div class="questions__item">Позвонит Биг Рашн Боссу и скажет, что теперь он здесь Биг Рашн Босс.</div>
+					</div>
+
+					<div class="questions__blocList" id="questions__blocList_2">
+						<div class="question__title question__title_2">
+							<div class="question__titleWRP">Каким должен быть Пресс-секретарь Президента?</div>
+						</div>
+						<div class="questions__item">Главное, чтобы пресс был с кубиками.</div>
+						<div class="questions__item">Пусть будет Маликов. Я маме обещал.</div>
+						<div class="questions__item">Жириновский. Поорем вместе.</div>
+						<div class="questions__item">Живым… И желательно нефильтрованным.</div>
+					</div>
+
+					<div class="questions__blocList" id="questions__blocList_3">
+						<div class="question__title question__title_3">
+							<div class="question__titleWRP">Кто попадает под воинскую обязанность?</div>
+						</div>
+						<div class="questions__item">Бьюти-блогеры. Они знают, как сделать правильную маскировку.</div>
+						<div class="questions__item">Это целая отдельная рекламная песня!</div>
+						<div class="questions__item">Призовите русских рэперов. Получится самая страшная армия в мире.</div>
+						<div class="questions__item">Вейперы. Сэкономим на дымовых гранатах.</div>
+					</div>
+
+					<div class="questions__blocList" id="questions__blocList_4">
+						<div class="question__title question__title_4">
+							<div class="question__titleWRP">Как ответить на санкции США?</div>
+						</div>
+						<div class="questions__item">Привет, Алиса. Что такое санкции?</div>
+						<div class="questions__item">Мы отправим к ним Ракету.</div> 
+						<div class="questions__item">Нам не страшно. Мы замутим совместку с белорусами.</div>
+						<div class="questions__item">Продолжать есть санкционные продукты и не обращать внимания.</div>
+					</div>
+
+					<div class="questions__blocList" id="questions__blocList_5">
+						<div class="question__title question__title_5">
+							<div class="question__titleWRP">Куда отправится Президент с рабочим визитом в первую очередь?</div>
+						</div>
+						<div class="questions__item">Куда угодно. Меня все равно нигде не знают.</div>
+						<div class="questions__item">В Америку. Надо английский подтянуть.</div>
+						<div class="questions__item">В Таилайнд. Надо загореть, чтобы мама осталась довольна.</div>
+						<div class="questions__item">В Грецию. Хоть кто-то должен там поработать.</div>
+					</div>
+
+					<div class="questions__blocList" id="questions__blocList_6">
+						<div class="question__title question__title_6">
+							<div class="question__titleWRP">Как победить коррупцию чиновников?</div>
+						</div>
+						<div class="questions__item">Свозить их в Сингапур в один конец для обмена опытом.</div>
+						<div class="questions__item">Вжух, как это не клево!</div>
+						<div class="questions__item">Всем ворующим ссылка… желательно, битая.</div>
+						<div class="questions__item">Предлагаю продолжить пранк с колбаской.</div>
+					</div>
+
+					<div class="questions__blocList" id="questions__blocList_7">
+						<div class="question__title question__title_7">
+							<div class="question__titleWRP">Как повысить рождаемость в&nbsp;стране?</div>
+						</div>
+						<div class="questions__item">Дорогие россияне... Хотите узнать о самом вкусном и недорогом пиве?
+						Переходите по ссылочке в описании.</div>
+						<div class="questions__item">Проводить выпускной в школе несколько раз в год.</div>
+						<div class="questions__item">Раз в день выключать вай-фай по всей стране.</div>
+						<div class="questions__item">Включите телик, там сплошная порнография.</div>
+					</div>
+
+					<div class="questions__blocList" id="questions__blocList_8">
+						<div class="question__title question__title_8">
+							<div class="question__titleWRP">На чем должна лежать рука Президента, когда он будет произносить клятву?</div>
+						</div>
+						<div class="questions__item">На золотой кнопке от Youtube. Это самое дорогое, что у меня есть.</div>
+						<div class="questions__item">На джойстике, пицце и холодном пиве.</div>
+						<div class="questions__item">Я положу руку на плакат Нойза МС. Никто не должен это видеть.</div>
+						<div class="questions__item">На Макбуке. Он всегда у меня под рукой, чтобы не украли.</div>
+					</div>
+
+					<div class="questions__blocList" id="questions__blocList_9">
+						<div class="question__title question__title_9">
+							<div class="question__titleWRP question__titleWRP_nn">Как бороться с безработицей?</div>
+						</div>
+						<div class="questions__item">Запретить все онлайн-казино.</div>
+						<div class="questions__item">Я не знаю, какой вынести вердикт!</div>
+						<div class="questions__item">А о том, как победить безработицу, вы узнаете в следующем выпуске.</div>
+						<div class="questions__item">Зачем? Я не работаю, и живу как король.</div>
+					</div>
+
+					<div class="questions__blocList" id="questions__blocList_10">
+						<div class="question__title question__title_10">
+							<div class="question__titleWRP question__titleWRP_nn">Какую страну вы видите стратегическим партнером?</div>
+						</div>
+						<div class="questions__item">Любую, где можно отлично отдохнуть со своими бро.</div>
+						<div class="questions__item">Китай. Они жидкость для вейпа делают.</div>
+						<div class="questions__item">Армения. Судя по населению, мы с ними уже объединились.</div>
+						<div class="questions__item">Я никого не вижу. Просто в детстве на сварку смотрел теперь в очках хожу.</div>
+					</div>
+
+					<div class="questions__blocList" id="questions__blocList_11">
+						<div class="question__title question__title_11">
+							<div class="question__titleWRP question__titleWRP_nn">Как должен выглядеть Президент?</div>
+						</div>
+						<div class="questions__item">«Спроси у своей мамы».</div>
+						<div class="questions__item">Главное, чтобы фэйс был нормальный.</div>
+						<div class="questions__item">Он должен быть спортивным. Например, пловец. А что, дзюдо мы уже
+						подтянули.</div>
+						<div class="questions__item">Он должен быть неповторим, как (пародирует Соболева) Нииииккккколаай
+						Соболев!</div>
+					</div>
+
+					<div class="questions__blocList" id="questions__blocList_12">
+						<div class="question__title question__title_12">
+							<div class="question__titleWRP question__titleWRP_nn">Что всегда должно быть с собой у Президента?</div>
+						</div>
+						<div class="questions__item">Шуба. Мало ли через час срочно нужно быть на Северном полюсе.</div>
+						<div class="questions__item">Борода, чтобы все говорили «Да».</div>
+						<div class="questions__item">Премьер-министр. Мало ли, он захочет послушать песню «У нее глаза – два бриллианта, три карата…».</div>
+						<div class="questions__item">Первая леди и вторая - если визит неофициальный.</div>
+					</div>
+
+					<div class="questions__blocList" id="questions__blocList_13">
+						<div class="question__title question__title_13">
+							<div class="question__titleWRP question__titleWRP_nn">Какие льготы следует установить для населения?</div>
+						</div>
+						<div class="questions__item">Нельзя продавать алкоголь после 23:00. Его нужно раздавать бесплатно.</div>
+						<div class="questions__item">Целый час бесплатного прослушивания русской музыки в соцсетях. Больше – вредно.</div>
+						<div class="questions__item">Дополнительные уроки русского языка для тех, кто любит писать комментарии.</div>
+						<div class="questions__item">Бесплатное посещение ортодонта.</div>
+					</div>
+					
+				</div>
+
+				<div id="end">
+					<div id="page0" class="testResultItem show">
+						<img data-izimodal-open="#modal-1" class="candidate__item candidate__item_01" src="img/candidate-1.png">
+						<div class="rezLink" data-izimodal-open="#modal-1"></div>
+					</div>
+					<div id="page1" class="testResultItem">
+						<img data-izimodal-open="#modal-2" class="candidate__item candidate__item_02" src="img/candidate-2.png">
+						<div class="rezLink" data-izimodal-open="#modal-2"></div>
+					</div>
+					<div id="page2" class="testResultItem">
+						<img data-izimodal-open="#modal-3" class="candidate__item candidate__item_03" src="img/candidate-3.png">
+						<div class="rezLink" data-izimodal-open="#modal-3"></div>
+					</div>
+					<div id="page3" class="testResultItem">
+						<img data-izimodal-open="#modal-4" class="candidate__item candidate__item_04" src="img/candidate-4.png">
+						<div class="rezLink" data-izimodal-open="#modal-4"></div>
+					</div>
+					<div id="page4" class="testResultItem">
+						<img data-izimodal-open="#modal-5" class="candidate__item candidate__item_05" src="img/candidate-5.png">
+						<div class="rezLink" data-izimodal-open="#modal-5"></div>
+					</div>
+					<div id="page5" class="testResultItem">
+						<img data-izimodal-open="#modal-6" class="candidate__item candidate__item_06" src="img/candidate-6.png">
+						<div class="rezLink" data-izimodal-open="#modal-6"></div>
+					</div>
+					<div id="page6" class="testResultItem">
+						<img data-izimodal-open="#modal-7" class="candidate__item candidate__item_07" src="img/candidate-7.png">
+						<div class="rezLink" data-izimodal-open="#modal-7"></div>
+					</div>
+					<div id="page7" class="testResultItem">
+						<img data-izimodal-open="#modal-8" class="candidate__item candidate__item_08" src="img/candidate-8.png">
+						<div class="rezLink" data-izimodal-open="#modal-8"></div>
+					</div>
+					<div id="page8" class="testResultItem">
+						<img data-izimodal-open="#modal-9" class="candidate__item candidate__item_09" src="img/candidate-9.png">
+						<div class="rezLink" data-izimodal-open="#modal-9"></div>
+					</div>
+					<div id="page9" class="testResultItem">
+						<img data-izimodal-open="#modal-10" class="candidate__item candidate__item_10" src="img/candidate-10.png">
+						<div class="rezLink" data-izimodal-open="#modal-10"></div>
+					</div>
+					<div class="end__text">
+						Слава блогу, он не баллотируется в президенты. Зато у тебя есть возможность выбрать реального кандидата — приходи 18 марта на избирательный участок и «поставь свой лайк» тому, кого считаешь достойным!<br><br><a id="startText">Пройти тест еще раз</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+</div> <!-- /fullpage -->
 
 
 
-        <script src="./js/main_m.js"></script>
-        <script src="./js/kandidat.js?v=2"></script>
-        <script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
-        <script src="https://yastatic.net/share2/share.js"></script>
-        <script>
-            Ya.share2('my-share', {
-                content: {
-                    url: 'http://kandidat.lenta.ru',
-                    title: 'Тест: Кто твой кандидат?',
-                    description: 'Ответь на вопросы сейчас и сделай свой выбор 18 марта!',
-                    image: 'http://kandidat.maximonline.ru/share.jpg'
-                }
-            });
-        </script>
-    </body>
+<div id="modal-1" class="modais" data-izimodal-transitionin="fadeInDown" data-izimodal-title="БИГРАШН БОСС" data-izimodal-iframeURL="https://www.youtube.com/embed/TU1ek8tk2ys?autoplay=1"></div>
+<div id="modal-2" class="modais" data-izimodal-transitionin="fadeInDown" data-izimodal-title="ЮРИЙ ХОВАНСКИЙ" data-izimodal-iframeURL="https://www.youtube.com/embed/WlVSq2nVpDg?autoplay=1"></div>
+
+
+
+<script src="js/main_m.js"></script>
+<script src="js/kandidat.js%3Fv=2"></script>
+<script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+<script src="https://yastatic.net/share2/share.js"></script>
+<script>
+	Ya.share2('my-share', {
+	    content: {
+	        url: 'http://kandidat.lenta.ru',
+	        title: 'Тест: Кто твой кандидат?',
+	        description: 'Ответь на вопросы сейчас и сделай свой выбор 18 марта!',
+	        image: 'http://kandidat.lenta.ru/share.jpg'
+	    }
+	});
+</script>
+</body>
 </html>
