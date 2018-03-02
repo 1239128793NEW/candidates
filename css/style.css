@@ -810,100 +810,187 @@ body{
 /* Candidate --> */
 
 .candidate__list{
+	display: flex;
+	flex-flow: row wrap;
 	width: 950px;
 	height: auto;
 	position: relative;
 	margin: 20px auto 0 auto;
 }
-.candidate__item{
-	position: absolute;
+.candidate__item {
+	position: relative;
 	display: block;
 	cursor: pointer;
 	display: block;
+	text-align: center;
 }
-.candidate__item_01{
-	z-index: 1;
-    width: 21vh;
-    max-width: 214px;
-    min-width: 100px;
-    height: auto;
-    top: 0;
-    left: 17%;
+.candidate__item img {
+	max-width: 150px;
 }
-.candidate__item_02{
-	z-index: 2;
-	width: 21vh;
-    max-width: 214px;
-    min-width: 100px;
-	top: 0;
-	left: 390px;
+.candidate__item {
+	width: calc(100% / 4);
 }
-.candidate__item_03{
-	z-index: 3;
-	width: 21vh;
-    max-width: 213px;
-    min-width: 100px;
-	top: 0;
-	left: 620px;
+.candidate__item_01 {
+	text-align: right;
 }
-.candidate__item_04{
-	z-index: 4;
-	width: 21vh;
-    max-width: 201px;
-    min-width: 100px;
-	top: 22vh;
-	left: 0;
+.candidate__item_03 {
+	text-align: left;
 }
-.candidate__item_05{
-	z-index: 5;
-	width: 21vh;
-    max-width: 179px;
-    min-width: 100px;
-	top: 29vh;
-	left: 215px;
+.candidate__item_04 {
+	text-align: left;
 }
-.candidate__item_06{
-	z-index: 6;
-    width: 23vh;
-    max-width: 228px;
-    min-width: 100px;
-    height: auto;
-    top: 34vh;
-    left: 432px;
+.candidate__item_07 {
+	text-align: right;
 }
-.candidate__item_07{
-	z-index: 7;
-	width: 23vh;
-    max-width: 218px;
-    min-width: 100px;
-	top: 29vh;
-	left: 710px;
+.candidate__item_01,
+.candidate__item_02,
+.candidate__item_03,
+.candidate__item_08,
+.candidate__item_09 {
+	width: calc(100% / 3);
 }
-.candidate__item_08{
-	z-index: 8;
-	width: 21vh;
-    max-width: 193px;
-    min-width: 100px;
-	top: 52vh;
-	left: 68px;
+
+.candidate__item_08,
+.candidate__item_09 {
+	width: calc(100% / 2);
 }
-.candidate__item_09{
-	z-index: 9;
-	width: 21vh;
-    max-width: 199px;
-    min-width: 100px;
-	top: 56vh;
-	left: 308px;
+.subscribers {
+	background-color: #ae0816;
+	color: white;
+	position: absolute;
+	font-size: 12px;
+	font-weight: 600;
+	padding: 2px 6px;
+	letter-spacing: 1px;
 }
-.candidate__item_10{
-	z-index: 10;
-	width: 30vh;
-    max-width: 288px;
-    min-width: 100px;
-    height: auto;
-    top: 56vh;
-    left: 578px;
+.candidate__item_01 .subscribers {
+	bottom: 59px;
+	left: 190px;
+	transform: rotate(-21deg);
 }
+.candidate__item_02 .subscribers {
+	bottom: 65px;
+	left: 140px;
+	transform: rotate(-11deg);
+}
+.candidate__item_03 .subscribers {
+	bottom: 72px;
+	left: 37px;
+	transform: rotate(-17deg);
+}
+.candidate__item_04 .subscribers {
+	bottom: 64px;
+	left: 34px;
+	transform: rotate(-25deg);
+}
+.candidate__item_05 .subscribers {
+	bottom: 73px;
+	left: 120px;
+	transform: rotate(-11deg);
+}
+.candidate__item_06 .subscribers {
+	bottom: 57px;
+	left: 88px;
+	transform: rotate(-1deg);
+}
+.candidate__item_07 .subscribers {
+	bottom: 37px;
+	left: 114px;
+	transform: rotate(9deg);
+}
+.candidate__item_08 .subscribers {
+	bottom: 65px;
+	left: 219px;
+	transform: rotate(-11deg);
+}
+.candidate__item_09 .subscribers {
+	bottom: 64px;
+	left: 225px;
+	transform: rotate(-16deg);
+}
+/*.candidate__item_01{*/
+	/*z-index: 1;*/
+    /*width: 21vh;*/
+    /*max-width: 214px;*/
+    /*min-width: 100px;*/
+    /*height: auto;*/
+    /*top: 0;*/
+    /*left: 17%;*/
+/*}*/
+/*.candidate__item_02{*/
+	/*z-index: 2;*/
+	/*width: 21vh;*/
+    /*max-width: 214px;*/
+    /*min-width: 100px;*/
+	/*top: 0;*/
+	/*left: 390px;*/
+/*}*/
+/*.candidate__item_03{*/
+	/*z-index: 3;*/
+	/*width: 21vh;*/
+    /*max-width: 213px;*/
+    /*min-width: 100px;*/
+	/*top: 0;*/
+	/*left: 620px;*/
+/*}*/
+/*.candidate__item_04{*/
+	/*z-index: 4;*/
+	/*width: 21vh;*/
+    /*max-width: 201px;*/
+    /*min-width: 100px;*/
+	/*top: 22vh;*/
+	/*left: 0;*/
+/*}*/
+/*.candidate__item_05{*/
+	/*z-index: 5;*/
+	/*width: 21vh;*/
+    /*max-width: 179px;*/
+    /*min-width: 100px;*/
+	/*top: 29vh;*/
+	/*left: 215px;*/
+/*}*/
+/*.candidate__item_06{*/
+	/*z-index: 6;*/
+    /*width: 23vh;*/
+    /*max-width: 228px;*/
+    /*min-width: 100px;*/
+    /*height: auto;*/
+    /*top: 34vh;*/
+    /*left: 432px;*/
+/*}*/
+/*.candidate__item_07{*/
+	/*z-index: 7;*/
+	/*width: 23vh;*/
+    /*max-width: 218px;*/
+    /*min-width: 100px;*/
+	/*top: 29vh;*/
+	/*left: 710px;*/
+/*}*/
+/*.candidate__item_08{*/
+	/*z-index: 8;*/
+	/*width: 21vh;*/
+    /*max-width: 193px;*/
+    /*min-width: 100px;*/
+	/*top: 52vh;*/
+	/*left: 68px;*/
+/*}*/
+/*.candidate__item_09{*/
+	/*z-index: 9;*/
+	/*width: 21vh;*/
+    /*max-width: 199px;*/
+    /*min-width: 100px;*/
+	/*top: 56vh;*/
+	/*left: 308px;*/
+/*}*/
+/*.candidate__item_10{*/
+	/*z-index: 10;*/
+	/*width: 30vh;*/
+    /*max-width: 288px;*/
+    /*min-width: 100px;*/
+    /*height: auto;*/
+    /*top: 56vh;*/
+    /*left: 578px;*/
+/*}*/
 /* <-- Candidate */
 
 
@@ -1340,43 +1427,43 @@ body{
 	    font-size: 5em;
 	    max-width: 544px;
 	}
-	.candidate__item_01 {
-	    left: 10%;
-	}
-	.candidate__item_02 {
-	    left: 280px;
-	}
-	.candidate__item_03 {
-	    left: 480px;
-	}
-	.candidate__item_04 {
-	    top: 0;
-	    left: 70%;
-	}
-	.candidate__item_05 {
-	    top: 24vh;
-	    left: 12%;
-	}
-	.candidate__item_06 {
-	    top: 28vh;
-	    left: 374px;
-	}
-	.candidate__item_07 {
-	    top: 26vh;
-	    left: 61%;
-	}
-	.candidate__item_08 {
-	    top: 49vh;
-	    left: 23%;
-	}
-	.candidate__item_09 {
-	    top: 51vh;
-	    left: 45%;
-	}
-	.candidate__item_10 {
-	    top: 48vh;
-	    left: 68%;
-	}
+	/*.candidate__item_01 {*/
+	    /*left: 10%;*/
+	/*}*/
+	/*.candidate__item_02 {*/
+	    /*left: 280px;*/
+	/*}*/
+	/*.candidate__item_03 {*/
+	    /*left: 480px;*/
+	/*}*/
+	/*.candidate__item_04 {*/
+	    /*top: 0;*/
+	    /*left: 70%;*/
+	/*}*/
+	/*.candidate__item_05 {*/
+	    /*top: 24vh;*/
+	    /*left: 12%;*/
+	/*}*/
+	/*.candidate__item_06 {*/
+	    /*top: 28vh;*/
+	    /*left: 374px;*/
+	/*}*/
+	/*.candidate__item_07 {*/
+	    /*top: 26vh;*/
+	    /*left: 61%;*/
+	/*}*/
+	/*.candidate__item_08 {*/
+	    /*top: 49vh;*/
+	    /*left: 23%;*/
+	/*}*/
+	/*.candidate__item_09 {*/
+	    /*top: 51vh;*/
+	    /*left: 45%;*/
+	/*}*/
+	/*.candidate__item_10 {*/
+	    /*top: 48vh;*/
+	    /*left: 68%;*/
+	/*}*/
 .h3__test {
     font-size: 5em;
     line-height: 1em;
@@ -1427,4 +1514,9 @@ body{
 
 
 
+}
+
+#startText{
+	cursor: pointer;
+	text-decoration: underline;
 }
