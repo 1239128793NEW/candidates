@@ -193,11 +193,11 @@ body{
 	position: absolute;
 	z-index: 100;
 	width: 140px;
-	height: 41px;
+	height: 24px;
 	top: 3vh;
 	left: 50%;
 	margin-left: -70px;
-	background: url('../img/logo_mxm.png') 0 0 no-repeat;
+	background: url('../img/logo.svg') 0 0 no-repeat;
 }
 .h1{
 	position: relative;
