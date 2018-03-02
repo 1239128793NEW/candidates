@@ -993,7 +993,7 @@ body{
 	width: 100%;
 	max-width: 790px;
 	margin: 0 auto;
-	padding-top: 68px;
+	/*padding-top: 68px;*/
 }
 .questions__blocList.show{
 	display: block;
