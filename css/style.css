@@ -150,8 +150,19 @@ body{
 	width: 100%;
 	max-width: 1000px;
 	margin: 0 auto;
-	background: url(../img/18.png) 0 0 no-repeat;
 	min-height: 74px;
+}
+.plashka{
+	background: url(../img/18.png) 0 0 no-repeat;
+	height: 70px;
+	left: -160px;
+	background-size: cover;
+	width: 400px;
+	position: fixed;
+	margin: 0;
+	top: 260px;
+	transform: rotate(-90deg);
+	z-index: 1;
 }
 
 
@@ -851,10 +862,6 @@ body{
 	width: calc(100% / 3);
 }
 
-.candidate__item_08,
-.candidate__item_09 {
-	width: calc(100% / 2);
-}
 .subscribers {
 	background-color: #ae0816;
 	color: white;
