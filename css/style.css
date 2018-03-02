@@ -812,6 +812,7 @@ body{
 .candidate__list{
 	display: flex;
 	flex-flow: row wrap;
+	justify-content: center;
 	width: 950px;
 	height: auto;
 	position: relative;
@@ -900,12 +901,12 @@ body{
 }
 .candidate__item_08 .subscribers {
 	bottom: 65px;
-	left: 219px;
+	left: 140px;
 	transform: rotate(-11deg);
 }
 .candidate__item_09 .subscribers {
 	bottom: 64px;
-	left: 225px;
+	left: 145px;
 	transform: rotate(-16deg);
 }
 /*.candidate__item_01{*/
