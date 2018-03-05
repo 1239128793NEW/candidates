@@ -1,34 +1,31 @@
 $(document).ready(function () {
 
     var candidates = [{
-        name: 'Биг Рашн Босс',
+        name: 'Юрий Хованский', // 0
         vote: 0
     }, {
-        name: 'Юрий Хованский',
+        name: 'Руслан Тушенцов', // 1
         vote: 0
     }, {
-        name: 'Совергон',
+        name: 'Данил Кашин', // 2
         vote: 0
     }, {
-        name: 'Данил Кашин',
+        name: 'Lizzka', // 3
         vote: 0
     }, {
-        name: 'Lizzka',
+        name: 'Юлик', // 4
         vote: 0
     }, {
-        name: 'Юлик',
+        name: 'Кузьма', // 5
         vote: 0
     }, {
-        name: 'Кузьма',
+        name: 'Даня Комков', // 6
         vote: 0
     }, {
-        name: 'Даня Комков',
+        name: 'Маш Милаш', // 7
         vote: 0
     }, {
-        name: 'Маш Милаш',
-        vote: 0
-    }, {
-        name: 'Ёрник и Косс',
+        name: 'Ёрник и Косс', // 8
         vote: 0
     }];
 
@@ -110,4 +107,38 @@ $(document).ready(function () {
         $('#menu').toggleClass('active');
     });
 
+    $('[data-modal-open]').bind('click', function () {
+        var modalId = $(this).attr('data-modal-open'),
+            numberCand = $(this).attr('data-number-cand');
+
+        $(modalId).find('input[name="number"]').val(numberCand);
+        $(modalId).show();
+    });
+
+    $(document).bind('click', function (event) {
+        if ($(event.target).closest('.feedback-modal__wrapper, [data-modal-open]').length) return;
+        $('.feedback-modal').hide();
+        $('.feedback-modal__wrapper form').show();
+        $('.feedback-modal__info').remove();
+        event.stopPropagation();
+    });
+
+    $('.feedback-modal__close').bind('click', function (event) {
+        $(this).closest('.feedback-modal').hide();
+        $('.feedback-modal__wrapper form').show();
+        $('.feedback-modal__info').remove();
+    });
+
+    $('form[name="feedback"]').on('submit', function () {
+        $.ajax({
+            url: 'mail.php',
+            data: $(this).serialize(),
+            success: function () {
+                $('.feedback-modal__wrapper form').hide();
+                $('.feedback-modal__wrapper').append('<div class="feedback-modal__info">Спасибо!</div>');
+                $(this).get(0).reset();
+            }
+        });
+        return false;
+    });
 });

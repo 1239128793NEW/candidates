@@ -787,6 +787,7 @@ a.menuItem{
 /* Candidate --> */
 
 .candidate__list{
+	align-items: center;
 	display: flex;
 	flex-flow: row wrap;
 	width: 320px;
@@ -860,6 +861,96 @@ a.menuItem{
 	bottom: 64px;
 	left: 60px;
 	transform: rotate(-16deg);
+}
+.candidate__item[number='1'] .number {
+	background: url('../img/numbers/1.png') no-repeat center center;
+	background-size: cover;
+	bottom: 0;
+	height: 72px;
+	left: 10px;
+	position: absolute;
+	width: 48px;
+}
+.candidate__item[number='2'] .number {
+	background: url('../img/numbers/2.png') no-repeat center center;
+	background-size: cover;
+	bottom: 10px;
+	height: 72px;
+	left: 10px;
+	position: absolute;
+	width: 67px;
+}
+.candidate__item[number='3'] .number {
+	background: url('../img/numbers/3.png') no-repeat center center;
+	background-size: cover;
+	bottom: 5px;
+	height: 72px;
+	left: 30px;
+	position: absolute;
+	width: 77px;
+}
+.candidate__item[number='4'] .number {
+	background: url('../img/numbers/4.png') no-repeat center center;
+	background-size: cover;
+	bottom: 10px;
+	height: 72px;
+	left: 20px;
+	position: absolute;
+	width: 64px;
+}
+.candidate__item[number='5'] .number {
+	background: url('../img/numbers/5.png') no-repeat center center;
+	background-size: cover;
+	bottom: 10px;
+	height: 72px;
+	left: 0;
+	position: absolute;
+	width: 65px;
+}
+.candidate__item[number='6'] .number {
+	background: url('../img/numbers/6.png') no-repeat center center;
+	background-size: cover;
+	bottom: 10px;
+	height: 72px;
+	left: 10px;
+	position: absolute;
+	width: 52px;
+}
+.candidate__item[number='7'] .number {
+	background: url('../img/numbers/7.png') no-repeat center center;
+	background-size: cover;
+	bottom: 10px;
+	height: 72px;
+	left: 20px;
+	position: absolute;
+	width: 55px;
+}
+.candidate__item[number='8'] .number {
+	background: url('../img/numbers/8.png') no-repeat center center;
+	background-size: cover;
+	bottom: 15px;
+	height: 72px;
+	left: 20px;
+	position: absolute;
+	width: 64px;
+}
+.candidate__item[number='9'] .number {
+	background: url('../img/numbers/9.png') no-repeat center center;
+	background-size: cover;
+	bottom: 5px;
+	height: 72px;
+	left: 10px;
+	position: absolute;
+	width: 66px;
+}
+.candidate__item[number='10'] .number {
+	background: url('../img/numbers/10.png') no-repeat center center;
+	background-size: cover;
+	bottom: 10px;
+	height: 72px;
+	left: 10px;
+	position: absolute;
+	width: 75px;
 }
 
 /*.candidate__list{*/
@@ -1260,4 +1351,58 @@ a.menuItem{
 }
 #sHARE .ya-share2__container_size_m .ya-share2__item {
     margin: 0px 10px 0px 10px;
+}
+
+.feedback-modal {
+	background-color: rgba(0, 0, 0, 0.3);
+	display: none;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+}
+.feedback-modal__bg {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.feedback-modal__wrapper {
+	background-color: white;
+	max-width: 320px;
+	padding: 10px 0;
+	position: relative;
+	width: 100%;
+}
+.feedback-modal__close {
+	cursor: pointer;
+	font-size: 18px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+.feedback-modal__info {
+	text-align: center;
+}
+.feedback-modal__form_group {
+	margin: 10px 0;
+	text-align: center;
+}
+.feedback-modal__form_group input {
+	padding: 4px 10px;
+	max-width: 260px;
+	width: 100%;
+}
+.feedback-modal__form_group button {
+	background-color: #b80716;
+	border: none;
+	color: white;
+	cursor: pointer;
+	max-width: 260px;
+	padding: 4px 10px;
+	width: 100%;
 }
