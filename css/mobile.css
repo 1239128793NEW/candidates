@@ -250,7 +250,7 @@ a.menuItem{
 }
 #section2{
 	background-image: url(../img/bg-2_m.jpg);
-	height: 1225px;
+	height: 975px;
 }
 #section3{
 	background-image: url(../img/bg-3_m.jpg);
@@ -1214,8 +1214,8 @@ a.menuItem{
 }
 .question__titleWRP{
 	font-family: 'Open Sans', sans-serif;
-	font-size: 32px;
-	line-height: 36px;
+	font-size: 25px;
+	line-height: 30px;
 	position: relative;
 	z-index: 9;
 	text-align: center;
