@@ -130,13 +130,16 @@ $(document).ready(function () {
     });
 
     $('form[name="feedback"]').on('submit', function () {
+        var self = $(this);
+
         $.ajax({
+            method: 'POST',
             url: 'mail.php',
             data: $(this).serialize(),
             success: function () {
                 $('.feedback-modal__wrapper form').hide();
                 $('.feedback-modal__wrapper').append('<div class="feedback-modal__info">Спасибо!</div>');
-                $(this).get(0).reset();
+                self.get(0).reset();
             }
         });
         return false;
