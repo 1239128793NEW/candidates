@@ -807,7 +807,7 @@ body{
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
-	width: 950px;
+	width: 780px;
 	height: auto;
 	position: relative;
 	margin: 20px auto 0 auto;
@@ -818,13 +818,11 @@ body{
 	cursor: pointer;
 	text-align: center;
 }
-.candidate__item_02 {
-	margin: 0 80px;
-}
 .candidate__item img {
 	max-width: 190px;
 }
 .candidate__item {
+    margin: 0 20px;
 	width: 200px;
 }
 
