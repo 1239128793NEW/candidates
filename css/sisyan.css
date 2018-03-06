@@ -1420,21 +1420,23 @@ body{
 
 
 
-#end .candidate__item{
+#end .testResultItem{
 	position: absolute;
+	top: 20px;
+	right: 0;
+	left: auto;
+}
+
+#end .candidate__item{
 	display: block;
 	cursor: pointer;
-	display: block;
-	top: 20px;
-	right: 30px;
-	left: auto;
 }
 .rezLink{
 	position: absolute;
 	display: block;
 	cursor: pointer;
 	display: block;
-	top: 275px;
+	bottom: -80px;
     right: 8px;
 	width: 246px;
 	height: 87px;
