@@ -1,33 +1,6 @@
 $(document).ready(function () {
 
-    var candidates = [{
-        name: 'Юрий Хованский', // 0
-        vote: 0
-    }, {
-        name: 'Руслан Тушенцов', // 1
-        vote: 0
-    }, {
-        name: 'Данил Кашин', // 2
-        vote: 0
-    }, {
-        name: 'Lizzka', // 3
-        vote: 0
-    }, {
-        name: 'Юлик', // 4
-        vote: 0
-    }, {
-        name: 'Кузьма', // 5
-        vote: 0
-    }, {
-        name: 'Даня Комков', // 6
-        vote: 0
-    }, {
-        name: 'Маш Милаш', // 7
-        vote: 0
-    }, {
-        name: 'Ёрник и Косс', // 8
-        vote: 0
-    }];
+    var candidates = [];
 
     $('.questions__blocList .questions__item').bind('click', function () {
         var self = $(this);
