@@ -865,9 +865,9 @@ a.menuItem{
 .candidate__item[number='3'] .number {
 	background: url('../img/numbers/3.png') no-repeat center center;
 	background-size: cover;
-	bottom: 5px;
+	bottom: -10px;
 	height: 72px;
-	left: 30px;
+	left: 0;
 	position: absolute;
 	width: 77px;
 }
