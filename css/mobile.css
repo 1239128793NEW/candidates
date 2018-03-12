@@ -847,38 +847,38 @@ a.menuItem{
 .candidate__item[number='1'] .number {
 	background: url('../img/numbers/1.png') no-repeat center center;
 	background-size: cover;
-	bottom: 0;
-	height: 72px;
-	left: 10px;
-	position: absolute;
-	width: 48px;
+    bottom: 5px;
+    height: 52px;
+    left: 20px;
+    position: absolute;
+    width: 32px;
 }
 .candidate__item[number='2'] .number {
 	background: url('../img/numbers/2.png') no-repeat center center;
 	background-size: cover;
-	bottom: 10px;
-	height: 72px;
-	left: 10px;
-	position: absolute;
-	width: 67px;
+    bottom: -10px;
+    height: 52px;
+    left: 10px;
+    position: absolute;
+    width: 48px;
 }
 .candidate__item[number='3'] .number {
 	background: url('../img/numbers/3.png') no-repeat center center;
 	background-size: cover;
-	bottom: -10px;
-	height: 72px;
-	left: 0;
-	position: absolute;
-	width: 77px;
+    bottom: -10px;
+    height: 52px;
+    left: 5px;
+    position: absolute;
+    width: 56px;
 }
 .candidate__item[number='4'] .number {
 	background: url('../img/numbers/4.png') no-repeat center center;
 	background-size: cover;
-	bottom: 10px;
-	height: 72px;
-	left: 20px;
-	position: absolute;
-	width: 64px;
+    bottom: -10px;
+    height: 52px;
+    left: 20px;
+    position: absolute;
+    width: 46px;
 }
 .candidate__item[number='5'] .number {
 	background: url('../img/numbers/5.png') no-repeat center center;
