@@ -893,10 +893,10 @@ a.menuItem{
 	background: url('../img/numbers/6.png') no-repeat center center;
 	background-size: cover;
 	bottom: 10px;
-	height: 72px;
+	height: 52px;
 	left: 10px;
 	position: absolute;
-	width: 52px;
+	width: 38px;
 }
 .candidate__item[number='7'] .number {
 	background: url('../img/numbers/7.png') no-repeat center center;
