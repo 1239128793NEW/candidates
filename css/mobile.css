@@ -884,10 +884,10 @@ a.menuItem{
 	background: url('../img/numbers/5.png') no-repeat center center;
 	background-size: cover;
 	bottom: 10px;
-	height: 72px;
-	left: 0;
+	height: 52px;
+	left: 5px;
 	position: absolute;
-	width: 65px;
+	width: 47px;
 }
 .candidate__item[number='6'] .number {
 	background: url('../img/numbers/6.png') no-repeat center center;
