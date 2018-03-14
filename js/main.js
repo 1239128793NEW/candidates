@@ -1,5 +1,26 @@
 $(document).ready(function () {
-    var candidates = [];
+    var candidates = [{
+        name: 'Даня Комков', // 0
+        vote: 0
+    }, {
+        name: 'Ёрник', // 1
+        vote: 0
+    }, {
+        name: 'Кузьма', // 2
+        vote: 0
+    }, {
+        name: 'Юлик', // 3
+        vote: 0
+    }, {
+        name: 'Lizzka', // 4
+        vote: 0
+    }, {
+        name: 'Маш Милаш', // 5
+        vote: 0
+    }, {
+        name: 'Юрий Хованский', // 6
+        vote: 0
+    }];
 
     $('.questions__blocList .questions__item').bind('click', function () {
         var self = $(this);
@@ -28,9 +49,6 @@ $(document).ready(function () {
                     }
                 });
 
-                //console.log(candidates[resultIndex]);
-                //console.log(resultIndex);
-
                 $("#end").addClass("show");
                 $('.testResultItem:visible').hide();
                 $('#page' + resultIndex).show();
@@ -38,7 +56,7 @@ $(document).ready(function () {
                 $(".h3__resul").show(400);
                 $(".h3__resul").addClass("active");
             }
-        }, 500);
+        }, 100);
     });
 
     $("#startText").click(function () {

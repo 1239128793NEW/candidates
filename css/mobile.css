@@ -399,6 +399,24 @@ a.menuItem{
     margin: 0 auto;
     transition: all .6s;
 }
+.h3__test:after{
+	content: 'ТЕСТ';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+	z-index: 0;
+	color: #b0020a;
+}
+.h3__test:before{
+	content: 'ТЕСТ';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+	z-index: 1;
+	color: #fff;
+}
 .active .h3__test{
     -o-transform: rotate(-9deg);
 	-ms-transform: rotate(-9deg);
