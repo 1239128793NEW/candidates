@@ -901,11 +901,11 @@ a.menuItem{
 .candidate__item[number='7'] .number {
 	background: url('../img/numbers/7.png') no-repeat center center;
 	background-size: cover;
-	bottom: 10px;
-	height: 72px;
-	left: 20px;
-	position: absolute;
-	width: 55px;
+    bottom: 15px;
+    height: 52px;
+    left: 5px;
+    position: absolute;
+    width: 39px;
 }
 .candidate__item[number='8'] .number {
 	background: url('../img/numbers/8.png') no-repeat center center;
