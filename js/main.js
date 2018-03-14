@@ -17,9 +17,6 @@ $(document).ready(function () {
     }, {
         name: 'Маш Милаш', // 5
         vote: 0
-    }, {
-        name: 'Юрий Хованский', // 6
-        vote: 0
     }];
 
     $('.questions__blocList .questions__item').bind('click', function () {
