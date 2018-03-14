@@ -819,7 +819,7 @@ body{
 	text-align: center;
 }
 .candidate__item img {
-	max-width: 190px;
+	max-height: 180px;
 }
 .candidate__item {
     margin: 0 20px;
