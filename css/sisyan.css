@@ -1410,12 +1410,13 @@ body{
 #end .candidate__item{
 	display: block;
 	cursor: pointer;
+	max-height: 220px;
+	width: auto;
 }
 .rezLink{
 	position: absolute;
 	display: block;
 	cursor: pointer;
-	display: block;
 	bottom: -80px;
     right: 8px;
 	width: 246px;
